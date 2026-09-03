@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test japanLNG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .quiz-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        .word {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px;
+            border: 2px solid #4A90E2;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #4A90E2;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz-card">
+        <h2>Выберите перевод:</h2>
+
+        <div class="word">{{ correct_word.words }}</div>
+        <p>({{ correct_word.romaji }})</p>
+
+
+        <div class="options-grid">
+            {% for item in options %}
+            <button class="btn">{{ item.russian }}</button>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+
+</html>

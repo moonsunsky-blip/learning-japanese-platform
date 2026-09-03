@@ -1,0 +1,265 @@
+一|ichi|один
+二|ni|два
+三|san|три
+四|yon/shi|четыре
+五|go|пять
+六|roku|шесть
+七|nana/shichi|семь
+八|hachi|восемь
+九|kyuu|девять
+十|juu|десять
+百|hyaku|сто
+千|sen|тысяча
+万|man|десять тысяч
+今|ima|сейчас
+今日|kyou|сегодня
+明日|ashita|завтра
+昨日|kinou|вчера
+今朝|kesa|сегодня утром
+今晩|konban|сегодня вечером
+毎日|mainichi|каждый день
+毎週|maishuu|каждую неделю
+毎月|maitsuki|каждый месяц
+毎年|mainen|каждый год
+朝|asa|утро
+昼|hiru|день (полдень)
+夜|yoru|ночь
+週|shuu|неделя
+月|tsuki|месяц
+年|toshi|год
+時|ji|час
+分|fun/pun|минута
+先週|senshuu|прошлая неделя
+来週|raishuu|следующая неделя
+先月|sengetsu|прошлый месяц
+来月|raigetsu|следующий месяц
+去年|kyonen|прошлый год
+来年|rainen|следующий год
+月曜日|getsuyoubi|понедельник
+火曜日|kayoubi|вторник
+水曜日|suiyoubi|среда
+木曜日|mokuyoubi|четверг
+金曜日|kinyoubi|пятница
+土曜日|doyoubi|суббота
+日曜日|nichiyoubi|воскресенье
+家族|kazoku|семья
+父|chichi|отец (свой)
+お父さん|otousan|отец (чужой/обращение)
+母|haha|мать (своя)
+お母さん|okaasan|мать (чужая/обращение)
+兄|ani|старший брат
+姉|ane|старшая сестра
+弟|otouto|младший брат
+妹|imouto|младшая сестра
+両親|ryoushin|родители
+子供|kodomo|ребёнок
+おじいさん|ojiisan|дедушка
+おばあさん|obaasan|бабушка
+夫|otto|муж
+妻|tsuma|жена
+友達|tomodachi|друг
+私|watashi|я
+あなた|anata|ты/вы
+彼|kare|он
+彼女|kanojo|она
+みんな|minna|все
+人|hito|человек
+男|otoko|мужчина
+女|onna|женщина
+先生|sensei|учитель
+学生|gakusei|студент
+会社員|kaishain|работник компании
+学校|gakkou|школа
+大学|daigaku|университет
+会社|kaisha|компания
+病院|byouin|больница
+銀行|ginkou|банк
+郵便局|yuubinkyoku|почта
+駅|eki|станция
+空港|kuukou|аэропорт
+店|mise|магазин
+デパート|depaato|универмаг
+図書館|toshokan|библиотека
+公園|kouen|парк
+家|ie|дом
+部屋|heya|комната
+国|kuni|страна
+町|machi|город
+ご飯|gohan|рис/еда
+パン|pan|хлеб
+水|mizu|вода
+お茶|ocha|чай
+コーヒー|koohii|кофе
+牛乳|gyuunyuu|молоко
+肉|niku|мясо
+魚|sakana|рыба
+野菜|yasai|овощи
+果物|kudamono|фрукты
+卵|tamago|яйцо
+料理|ryouri|блюдо/готовка
+朝ご飯|asagohan|завтрак
+昼ご飯|hirugohan|обед
+晩ご飯|bangohan|ужин
+レストラン|resutoran|ресторан
+上|ue|верх
+下|shita|низ
+中|naka|внутри
+外|soto|снаружи
+前|mae|перед
+後ろ|ushiro|позади
+右|migi|направо
+左|hidari|налево
+近く|chikaku|рядом
+隣|tonari|соседний
+向こう|mukou|напротив/дальше
+行く|iku|идти
+来る|kuru|приходить
+帰る|kaeru|возвращаться
+食べる|taberu|есть
+飲む|nomu|пить
+見る|miru|смотреть
+聞く|kiku|слушать
+話す|hanasu|говорить
+読む|yomu|читать
+書く|kaku|писать
+買う|kau|покупать
+売る|uru|продавать
+分かる|wakaru|понимать
+知る|shiru|знать
+起きる|okiru|просыпаться
+寝る|neru|спать
+働く|hataraku|работать
+休む|yasumu|отдыхать
+勉強する|benkyousuru|учиться
+作る|tsukuru|делать
+使う|tsukau|использовать
+待つ|matsu|ждать
+会う|au|встречаться
+出る|deru|выходить
+入る|hairu|входить
+座る|suwaru|сидеть
+立つ|tatsu|стоять
+歩く|aruku|идти пешком
+走る|hashiru|бежать
+乗る|noru|садиться 
+降りる|oriru|выходить 
+開ける|akeru|открывать
+閉める|shimeru|закрывать
+持つ|motsu|держать/иметь
+教える|oshieru|учить 
+習う|narau|учиться 
+洗う|arau|мыть
+着る|kiru|надевать
+撮る|toru|фотографировать
+歌う|utau|петь
+泳ぐ|oyogu|плавать
+死ぬ|shinu|умирать
+生まれる|umareru|рождаться
+思う|omou|думать
+言う|iu|говорить/сказать
+出す|dasu|доставать/отправлять
+送る|okuru|отправлять
+貸す|kasu|одалживать 
+借りる|kariru|занимать 
+大きい|ookii|большой
+小さい|chiisai|маленький
+新しい|atarashii|новый
+古い|furui|старый
+高い|takai|высокий-дорогой
+安い|yasui|дешёвый
+低い|hikui|низкий
+長い|nagai|длинный
+短い|mijikai|короткий
+暑い|atsui|жаркий
+寒い|samui|холодный
+熱い|atsui|горячий
+冷たい|tsumetai|холодный 
+忙しい|isogashii|занятой
+楽しい|tanoshii|весёлый
+面白い|omoshiroi|интересный
+難しい|muzukashii|сложный
+易しい|yasashii|лёгкий-добрый
+いい/良い|ii/yoi|хороший
+悪い|warui|плохой
+美味しい|oishii|вкусный
+かわいい|kawaii|милый
+忙しい|isogashii|занятый
+早い|hayai|ранний-быстрый
+遅い|osoi|поздний-медленный
+明るい|akarui|светлый
+暗い|kurai|тёмный
+強い|tsuyoi|сильный
+弱い|yowai|слабый
+静か|shizuka|тихий
+賑やか|nigiyaka|оживлённый
+綺麗|kirei|красивый-чистый
+元気|genki|бодрый-здоровый
+好き|suki|нравится
+嫌い|kirai|не нравится
+上手|jouzu|умелый
+下手|heta|неумелый
+便利|benri|удобный
+親切|shinsetsu|добрый-заботливый
+簡単|kantan|простой
+大丈夫|daijoubu|нормально-в порядке
+大変|taihen|трудно-тяжело
+有名|yuumei|знаменитый
+自由|jiyuu|свободный
+色|iro|цвет
+赤|aka|красный
+青|ao|синий
+黄色|kiiro|жёлтый
+白|shiro|белый
+黒|kuro|чёрный
+緑|midori|зелёный
+天気|tenki|погода
+雨|ame|дождь
+雪|yuki|снег
+風|kaze|ветер
+晴れ|hare|ясно
+曇り|kumori|облачно
+車|kuruma|машина
+電車|densha|поезд
+バス|basu|автобус
+自転車|jitensha|велосипед
+飛行機|hikouki|самолёт
+タクシー|takushii|такси
+何|nani/nan|что
+誰|dare|кто
+いつ|itsu|когда
+どこ|doko|где
+どう|dou|как
+どうして|doushite|почему
+どれ|dore|который 
+どちら|dochira|который 
+いくつ|ikutsu|сколько 
+いくら|ikura|сколько 
+おはようございます|ohayou gozaimasu|доброе утро
+こんにちは|konnichiwa|добрый день
+こんばんは|konbanwa|добрый вечер
+おやすみなさい|oyasuminasai|спокойной ночи
+さようなら|sayounara|до свидания
+ありがとうございます|arigatou gozaimasu|спасибо
+すみません|sumimasen|извините
+はい|hai|да
+いいえ|iie|нет
+お願いします|onegaishimasu|пожалуйста 
+どういたしまして|dou itashimashite|пожалуйста 
+本|hon|книга
+新聞|shinbun|газета
+雑誌|zasshi|журнал
+鉛筆|enpitsu|карандаш
+ペン|pen|ручка
+紙|kami|бумага
+机|tsukue|стол
+椅子|isu|стул
+かばん|kaban|сумка
+時計|tokei|часы
+傘|kasa|зонт
+眼鏡|megane|очки
+電話|denwa|телефон
+テレビ|terebi|телевизор
+写真|shashin|фотография
+お金|okane|деньги
+切符|kippu|билет
+薬|kusuri|лекарство
