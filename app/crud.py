@@ -7,8 +7,8 @@ from app import schemas
 
 
 
-
-# =====================
+# =====================================================
+# =====================================================
 
 
 # ============================ иероглифы ============================
@@ -88,7 +88,7 @@ def get_vocab_by_meaning(db: Session, russian):
 
 
 # ========================================================================
-
+# ========================================================================
 
 
 # ================================ создание данных =======================
@@ -152,4 +152,60 @@ def create_user(db: Session, user: schemas.UserCreate, hashed_password: str):
 
 # ======================================================
 
+# ======================================================
+
+
+
+
+# ======================================================
+# ============== ЛОГИКА ВЫДАЧА КОНТНЕТА ================
+# ======================================================
+
+def get_filter_by_level(db: Session, model, level: str):
+    """ пользователь вводит тип каталога и его уровень """
+    return db.query(model).filter(model.level == level).all()
+
+# ===
+
+def progress_of_kanji_user(db: Session, learn_element, user_email):
+    user = db.query (models.User).filter(models.User.email == user_email).first()
+    kanji = db.query (models.Kanji).filter(models.Kanji.id == learn_element).first()  
+
+    if not user or not kanji:
+        return None
+    
+    if kanji not in user.learned_kanji:
+        user.learned_kanji.append(kanji)
+        db.commit()
+        db.refresh(user)
+    
+
+    return user
+    
+# === 
+# ===
+
+def user_progress(db: Session, user_email, item_model, item_id, relation_name):
+    user = db.query (models.User).filter(models.User.email == user_email).first()
+    model = db.query (item_model).filter(item_model.id == item_id).first()
+    
+    if not user or not model:
+        return None
+    
+    user_list = getattr(user, relation_name)
+    
+    if model not in user_list:
+        user_list.append(model)
+        db.commit()
+        db.refresh(user)
+
+    return user
+# ===
+def get_user_progress(db: Session, user_email: str, relation_name: str):
+    user = db.query (models.User).filter(models.User.email == user_email).first()
+
+    if not user:
+        return None
+
+    return getattr(user, relation_name)
 
