@@ -63,4 +63,12 @@ class UserResponse(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
-        
+
+class ProgressResponse(BaseModel):
+
+    message: str
+    category: str
+    item_id: int
+
+    model_config = ConfigDict(from_attributes = True)
+    

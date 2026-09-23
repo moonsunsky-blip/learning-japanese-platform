@@ -95,8 +95,13 @@ def add_generic_progress(
     if user_progress is None:
         raise HTTPException(
             status_code = 404,
-            detail = f"Item with id: {item_id}, in category: {category} not found"
+            detail = f"Item with id: {item_id}, in category: '{category}' not found"
         )
 
-    return user_progress
+    return {
+        "message": f"Successfuly added to {relation_name}",
+        "category": category,
+        "item_id": item_id
+    }
+
 
