@@ -207,5 +207,4 @@ def get_user_progress(db: Session, user_email: str, relation_name: str):
     if not user:
         return None
 
-    return getattr(user, relation_name)
-
+    return getattr(user, relation_name, [])

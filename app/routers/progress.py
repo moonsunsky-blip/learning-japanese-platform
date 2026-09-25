@@ -69,7 +69,7 @@ CATEGORY_MAP = {
 }
 
 
-@router.post("/{category}/{item_id}", response_model = schemas.UserResponse)
+@router.post("/{category}/{item_id}", response_model=schemas.ProgressResponse)
 def add_generic_progress(
     category: str,
     item_id: int,
@@ -78,30 +78,60 @@ def add_generic_progress(
 ):
     if category not in CATEGORY_MAP:
         raise HTTPException(
-            status_code = 400,
-            detail = f"Invaild category. Allowed: {list(CATEGORY_MAP.keys())}"
+            status_code=400,
+            detail=f"Invalid category. Allowed: {list(CATEGORY_MAP.keys())}"
         )
 
     item_model, relation_name = CATEGORY_MAP[category]
 
     user_progress = crud.user_progress(
+        db=db,
+        user_email=current_user.email,
+        item_model=item_model,
+        item_id=item_id,
+        relation_name=relation_name
+    )
+
+    if user_progress is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Item with id {item_id} in category '{category}' not found"
+        )
+
+    
+    return {
+        "message": f"Successfully added to {relation_name}",
+        "category": category,
+        "item_id": item_id
+    }
+
+# ========= get progress of user ============
+
+@router.get("/{category}")
+def get_progress(
+    category: str,
+    current_user: models.User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    if category not in CATEGORY_MAP:
+        raise HTTPException(
+            status_code = 400,
+            detail = f"Invaild category. Allowed : {list(CATEGORY_MAP.keys())}"
+        )
+
+
+    _, relation_name = CATEGORY_MAP[category]
+
+    user_progress = crud.get_user_progress(
         db = db,
         user_email = current_user.email,
-        item_model = item_model,
-        item_id = item_id,
         relation_name = relation_name
     )
 
     if user_progress is None:
         raise HTTPException(
             status_code = 404,
-            detail = f"Item with id: {item_id}, in category: '{category}' not found"
+            detail = "User not found"
         )
 
-    return {
-        "message": f"Successfuly added to {relation_name}",
-        "category": category,
-        "item_id": item_id
-    }
-
-
+    return user_progress
