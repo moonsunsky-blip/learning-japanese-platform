@@ -12,6 +12,7 @@ from app.routers import kanji
 from app.routers import grammar
 from app.routers import alphabet
 from app.routers import auth
+from app.routers import progress
 
 
 
@@ -26,3 +27,4 @@ app.include_router(alphabet.router)
 
 app.include_router(auth.router)
 
+app.include_router(progress.router)
