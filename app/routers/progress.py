@@ -135,3 +135,25 @@ def get_progress(
         )
 
     return user_progress
+
+# =====================================================
+# level progress of user
+
+@router.post(response_model = schemas.UserResponse)
+def level_user_progress(user_id, db:Session = Depends(get_db)):
+    user = db.query(models.User).filter(models.User.id == user_id).first()
+
+    if user is None:
+        raise HTTPException(
+            status_code = 404,
+            detail = "User not found"
+        )
+
+    user.user_level = "mid beginner"
+
+    db.commit()
+    db.refresh(user)
+
+    return user
+# ======================== else level progress border
+

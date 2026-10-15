@@ -99,6 +99,7 @@ class User(Base):
     is_active = Column(Boolean, default = True)
     is_premium = Column(Boolean, default = False)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
+    user_level = Column(String, default = "beginner")
 
 
     learned_alphabet = relationship("Alphabet", secondary = user_alphabet, back_populates = "users")

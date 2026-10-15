@@ -57,6 +57,7 @@ class UserResponse(BaseModel):
     is_active: bool
     is_premium: bool
     created_at: datetime
+    user_level: str
 
     model_config = ConfigDict(from_attributes = True)
 
