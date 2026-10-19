@@ -72,4 +72,18 @@ class ProgressResponse(BaseModel):
     item_id: int
 
     model_config = ConfigDict(from_attributes = True)
-    
+
+
+class NoteCreate(BaseModel):
+    title: str
+    content: str
+
+class NoteResponse(BaseModel):
+
+    id: int
+    title: str
+    content: str
+    created_at: datetime
+    user_id: int
+
+    model_config = ConfigDict(from_attributes = True)

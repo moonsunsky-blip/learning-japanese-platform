@@ -107,4 +107,20 @@ class User(Base):
     learned_kanji = relationship("Kanji",secondary = user_kanji, back_populates = "users")
     learned_grammar = relationship("Grammar", secondary = user_grammar, back_populates = "users")
 
+    notes = relationship("UserNote", back_populates = "user", cascade = "all, delete-orphan")
+
 # ===================================================
+
+class UserNote(Base):
+    __tablename__ = "user_notes"
+
+    id = Column(Integer, primary_key = True, autoincrement = True)
+    title = Column(String, nullable = False)
+    content = Column(Text, nullable = False)
+    created_at = Column(DateTime(timezone = True), server_default = func.now())
+
+    # айди пользователя 
+    user_id = Column(Integer, ForeignKey("user.id"), nullable = False)
+
+    # автор заметки 
+    user = relationship("User", back_populates = "notes")
