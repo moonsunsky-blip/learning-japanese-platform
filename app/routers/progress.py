@@ -139,7 +139,7 @@ def get_progress(
 # =====================================================
 # level progress of user
 
-@router.post(response_model = schemas.UserResponse)
+@router.post("/user_level", response_model = schemas.UserResponse)
 def level_user_progress(user_id, db:Session = Depends(get_db)):
     user = db.query(models.User).filter(models.User.id == user_id).first()
 
